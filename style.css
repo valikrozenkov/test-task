@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .container {
     display: flex;
     width: 100%;
@@ -43,6 +47,7 @@
     line-height: 140%;
     letter-spacing: -0.2px;
     cursor: pointer;
+    transition: color 0.5s ease;
 }
 
 .logo {
@@ -52,6 +57,7 @@
 .logo img {
     width: 127px;
     height: 20px;
+    cursor: pointer;
 }
 
 .creds {
@@ -96,6 +102,7 @@
     color: #FFFFFF;
     line-height: 120%;
     letter-spacing: -0.2px;
+    cursor: pointer;
 }
 
 .image-wrapper {
@@ -258,6 +265,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    cursor: pointer;
 }
 
 .contacts img {
@@ -281,8 +289,6 @@
 
 .contacts-logo {
     display: flex;
-    width: 33%;
-    height: 20px;
     padding-top: 30px;
 }
 
@@ -304,8 +310,7 @@
     display: flex;
     padding-top: 30px;
     justify-content: center;
-    width: 33%;
-    gap: 40px;
+    padding-left: 362px;
 }
 
 .contacts-text {
@@ -322,6 +327,7 @@
     letter-spacing: -0.2px;
     line-height: 140%;
     color: #22282B;
+    cursor: pointer;
 
 }
 
@@ -329,7 +335,7 @@
     display: flex;
     padding-top: 30px;
     justify-content: end;
-    width: 33%;
+    margin-left: auto;
 }
 
 .contacts-policy-text {
@@ -356,6 +362,10 @@
     fill: #5B40FF;
 }
 
+.link:hover {
+    color: #5B40FF;
+}
+
 .card-title {
     font-size: 52px;
     font-weight: 600;
@@ -370,13 +380,14 @@
     letter-spacing: -0.3px;
     line-height: 130%;
     color: #22282B;
+    transition: all 0.6s ease;
 }
 
 .price {
     display: flex;
     gap: 10px;
     justify-content: start;
-    padding-top: 22px;
+    padding-top: 22px !important;
 }
 
 .currency {
@@ -395,6 +406,7 @@
     letter-spacing: -0.3px;
     color: #22282B;
     align-self: self-start;
+    transition: color 0.6s ease;
 }
 
 .term {
@@ -414,14 +426,17 @@
     line-height: 140%;
     color: #909DA2;
     max-width: 239px;
+    padding-top: 29px;
+    transition: color 0.6s ease;
 }
 
 .basic-card {
     display: flex;
     flex-direction: column;
-    width: 33.3%;
+    width: 33.333%;
     min-height: 931px;
     justify-content: space-between;
+    position: relative;
 }
 
 
@@ -430,6 +445,7 @@
     width: 100%;
     height: 931px;
     box-shadow: 0px 10px 110px 0px rgba(7, 14, 39, 0.05);
+    justify-content: space-between;
 }
 
 .card-button {
@@ -447,9 +463,12 @@
     display: flex;
     height: 1px;
     width: 100%;
-    left: -1.5px;
     background-color: #E6E9EA;
-    margin: 36px 0px 29px 0px;
+}
+
+.card-border-wrapper {
+    display: flex;
+    padding-top: 29px !important;
 }
 
 .basic-descreption {
@@ -505,9 +524,20 @@
 .card-header {
     display: flex;
     flex-direction: column;
-    padding-top: 54px;
+    padding: 54px 0px 70px 0px;
     width: 100%;
-} 
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.chip {
+    position: absolute;
+    display: none;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+}
 
 .header-left {
     padding-right: 40px;
@@ -525,22 +555,72 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 40px 0 90px 0;
+}
+
+.middle-padding {
+    padding: 40px 40px 90px 40px;
 }
 
 .included-text {
-    padding-bottom: 38px;
+    padding: 0px 40px 38px 40px;
+    color: #22282B !important;
 }
 
 .header-choosen-card {
     background-color: #5B40FF;
+    position: absolute;
+    top: -54px;
+    transition: all 1s ease;
+    padding-bottom: 70px;
 }
 
 .choosen-card {
     background-color: #F3F5F6;
+    justify-content: flex-end;
 }
 
 .border-middle {
     margin-left: 40px;
     margin-right: 40px;
+}
+
+.padding {
+    padding: 0px 40px;
+}
+
+.rounded-corners-left {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.small-padding-left {
+    padding-left: 40px;
+}
+
+.small-padding-right {
+    padding-right: 40px;
+}
+
+.header-choosen-card .button {
+    background-color: #fff;
+    display: flex;
+}
+
+.header-choosen-card .button p {
+    color: #22282B;
+
+}
+
+.header-choosen-card .price .amount,
+.header-choosen-card .basic-descreption .basic-text,
+.header-choosen-card .basic-title {
+    color: white;
+}
+
+.header-choosen-card .basic-title {
+    padding-top: 54px;
+}
+
+.contacts-logo img {
+    height: 20px;
+    min-width: 127px;
 }

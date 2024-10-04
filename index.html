@@ -19,7 +19,7 @@
     <div class="container">
         <div class="wrapper">
             <div class="subwrapper">
-                <div class="header">
+                <div class="header" id="header">
                     <div class="pages">
                         <p class="link">About</p>
                         <p class="link">Pricing</p>
@@ -98,16 +98,23 @@
                 <div class="section card-section">
                     <h1 class="card-title">Choose the plan</h1>
                     <div class="card-wrapper">
-                        <div class="basic-card">
-                            <div class="card-header header-left left-card">
-                                <h3 class="basic-title">Basic</h3>
-                                <div class="price">
+                        <div class="basic-card rounded-corners-left">
+                            <div class="card-header">
+                                <div class="chip button">
+                                    <p>
+                                        The cheapest
+                                    </p>
+                                </div>
+                                <h3 class="basic-title padding">Basic</h3>
+                                <div class="price padding">
                                     <p class="currency">$</p>
                                     <p class="amount">9</p>
                                     <p class="term">month</p>
                                 </div>
-                                <span class="card-border"></span>
-                                <div class="basic-descreption">
+                                <div class="card-border-wrapper padding">
+                                    <div class="card-border"></div>
+                                </div>
+                                <div class="basic-descreption padding">
                                     <p class="basic-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                                     <div class="button-wrapper card-button">
                                         <div class="button">
@@ -116,11 +123,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="list-services left-card">
+                            <div class="list-services">
                                 <h3 class="basic-title included-text">What&apos;s included</h3>
-                                <p class="package-type">Starter</p>
-                                <span class="underline-card"></span>
-                                <div class="list-services-array">
+                                <p class="package-type padding">Starter</p>
+                                <div class="small-padding-left">
+                                    <span class="underline-card"></span>
+                                </div>
+                                <div class="list-services-array middle-padding">
                                     <div class="list-services-points">
                                         <svg width="27" height="28" viewBox="0 0 27 28" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -171,14 +180,21 @@
 
                         <div class="basic-card">
                             <div class="card-header">
-                                <h3 class="basic-title header-middle">Standart</h3>
-                                <div class="price header-middle">
+                                <div class="chip button">
+                                    <p>
+                                        Most popular
+                                    </p>
+                                </div>
+                                <h3 class="basic-title padding">Standart</h3>
+                                <div class="price padding">
                                     <p class="currency">$</p>
                                     <p class="amount">29</p>
                                     <p class="term">month</p>
                                 </div>
-                                <div class="card-border border-middle"></div>
-                                <div class="basic-descreption header-middle">
+                                <div class="card-border-wrapper padding">
+                                    <div class="card-border"></div>
+                                </div>
+                                <div class="basic-descreption padding">
                                     <p class="basic-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                                     <div class="button-wrapper card-button">
                                         <div class="button">
@@ -189,9 +205,9 @@
                             </div>
 
                             <div class="list-services">
-                                <p class="package-type">Medium</p>
+                                <p class="package-type padding">Medium</p>
                                 <span class="underline-card"></span>
-                                <div class="list-services-array">
+                                <div class="list-services-array middle-padding">
                                     <div class="list-services-points">
                                         <svg width="27" height="28" viewBox="0 0 27 28" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -240,15 +256,22 @@
                             </div>
                         </div>
                         <div class="basic-card">
-                            <div class="card-header header-right">
-                                <h3 class="basic-title">Business</h3>
-                                <div class="price">
+                            <div class="card-header">
+                                <div class="chip button">
+                                    <p>
+                                        Most expensive
+                                    </p>
+                                </div>
+                                <h3 class="basic-title padding">Business</h3>
+                                <div class="price padding">
                                     <p class="currency">$</p>
                                     <p class="amount">99</p>
                                     <p class="term">month</p>
                                 </div>
-                                <span class="card-border"></span>
-                                <div class="basic-descreption">
+                                <div class="card-border-wrapper padding">
+                                    <div class="card-border"></div>
+                                </div>
+                                <div class="basic-descreption padding">
                                     <p class="basic-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                                     <div class="button-wrapper card-button">
                                         <div class="button">
@@ -257,10 +280,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="list-services right-card">
-                                <p class="package-type right-card">Large</p>
-                                <span class="underline-card right-card"></span>
-                                <div class="list-services-array">
+                            <div class="list-services">
+                                <p class="package-type padding">Large</p>
+                                <div class="small-padding-right">
+                                    <span class="underline-card"></span>
+                                </div>
+                                <div class="list-services-array middle-padding">
                                     <div class="list-services-points">
                                         <svg width="27" height="28" viewBox="0 0 27 28" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -459,9 +484,13 @@
                     </div>
                     <div class="contacts-wrapper-logo">
                         <span class="border-contacts"></span>
-                        <div class="contacts-logo">
-                            <img src="./images/Logo.png" />
-                        </div>
+                        <a href="#header">
+                            <div class="contacts-logo">
+
+                                <img src="./images/Logo.png"/>
+
+                            </div>
+                        </a>
                         <div class="contacts-textwrapper">
                             <p class="contacts-text">©2022 All right reserved</p>
                         </div>
