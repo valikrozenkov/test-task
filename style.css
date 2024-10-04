@@ -297,6 +297,7 @@ html {
 .contacts-logo {
     display: flex;
     padding-top: 30px;
+    width: 294px;
 }
 
 .contacts-wrapper-logo {
@@ -308,6 +309,7 @@ html {
 
 .contacts-link-wrapper {
     display: flex;
+    justify-content: space-between;
 }
 
 .section-contacts {
@@ -322,7 +324,6 @@ html {
     display: flex;
     padding-top: 30px;
     justify-content: center;
-    padding-left: 362px;
 }
 
 .contacts-text {
@@ -347,7 +348,6 @@ html {
     display: flex;
     padding-top: 30px;
     justify-content: end;
-    margin-left: auto;
 }
 
 .contacts-policy-text {
@@ -551,6 +551,17 @@ html {
     z-index: 10;
 }
 
+.chip-button {
+    padding: 11px 23px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    line-height: 120%;
+    color: #22282B;
+    background-color: white;
+    border-radius: 38px;
+}
+
 .header-left {
     padding-right: 40px;
 }
@@ -612,14 +623,17 @@ html {
     padding-right: 40px;
 }
 
-.header-choosen-card .button {
+.header-choosen-card .chip-button {
     background-color: #fff;
     display: flex;
 }
 
+.header-choosen-card .button {
+    background-color: white;
+}
+
 .header-choosen-card .button p {
     color: #22282B;
-
 }
 
 .header-choosen-card .price .amount,
@@ -635,4 +649,9 @@ html {
 .contacts-logo img {
     height: 20px;
     min-width: 127px;
+}
+
+.contacts-policy-wrapper {
+    display: flex;
+    width: 100%;
 }
