@@ -127,7 +127,7 @@
 }
 
 .trial-text {
-    max-width: 360px;    
+    max-width: 360px;
     color: #909DA2;
     font-weight: 500;
     font-size: 18px;
@@ -140,6 +140,7 @@
     flex-direction: column;
     justify-content: start;
 }
+
 .benefits {
     display: flex;
     width: 100%;
@@ -157,6 +158,7 @@
 .benefit-text {
     padding-left: 20px;
 }
+
 .border {
     position: absolute;
     display: flex;
@@ -165,6 +167,7 @@
     left: -1.5px;
     background-color: black;
 }
+
 .third-section {
     gap: 40px;
 }
@@ -173,7 +176,7 @@
     position: absolute;
     display: flex;
     height: 100%;
-    width: 1px; 
+    width: 1px;
     left: -1px;
     background-color: gray;
 }
@@ -182,6 +185,7 @@
     display: flex;
     justify-content: end;
 }
+
 .benefits-header {
     display: flex;
     position: relative;
@@ -194,4 +198,349 @@
     line-height: 120%;
     letter-spacing: -0.3px;
     max-width: 860px;
+}
+
+.slogan-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.slogan-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+.slogan-title-text {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: -0.3px;
+    max-width: 750px;
+    text-align: center;
+}
+
+.slogan-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.services-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 54px;
+}
+
+.services-propose {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services-text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -0.3px;
+    transition: color 0.5s ease;
+}
+
+.border-services {
+    display: flex;
+    height: 191px;
+    width: 1px;
+    left: -1px;
+    background-color: gray;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contacts img {
+    display: flex;
+    width: 72px;
+    height: 72px;
+}
+
+.border-contacts {
+    width: 1160px;
+    position: absolute;
+    display: flex;
+    background-color: lightgray;
+    height: 0.5px;
+}
+
+.contacts-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts-logo {
+    display: flex;
+    width: 33%;
+    height: 20px;
+    padding-top: 30px;
+}
+
+.contacts-wrapper-logo {
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.section-contacts {
+    margin: 90px 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contacts-textwrapper {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    width: 33%;
+    gap: 40px;
+}
+
+.contacts-text {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 140%;
+    color: #909DA2;
+}
+
+.title-contacts {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 140%;
+    color: #22282B;
+
+}
+
+.contacts-policy {
+    display: flex;
+    padding-top: 30px;
+    justify-content: end;
+    width: 33%;
+}
+
+.contacts-policy-text {
+    display: flex;
+    padding-left: 30px;
+}
+
+.list {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list svg path {
+    transition: fill 0.5s ease;
+}
+
+.list:hover .services-text {
+    color: #5B40FF;
+}
+
+.list:hover svg path {
+    fill: #5B40FF;
+}
+
+.card-title {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.3px;
+    text-align: center;
+}
+
+.basic-title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    line-height: 130%;
+    color: #22282B;
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    padding-top: 22px;
+}
+
+.currency {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 140%;
+    color: #909DA2;
+    padding-top: 16px;
+}
+
+.amount {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.3px;
+    color: #22282B;
+    align-self: self-start;
+}
+
+.term {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 140%;
+    color: #909DA2;
+    align-self: self-end;
+    padding-bottom: 11px;
+}
+
+.basic-text {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 140%;
+    color: #909DA2;
+    max-width: 239px;
+}
+
+.basic-card {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    min-height: 931px;
+    justify-content: space-between;
+}
+
+
+.card-wrapper {
+    display: flex;
+    width: 100%;
+    height: 931px;
+    box-shadow: 0px 10px 110px 0px rgba(7, 14, 39, 0.05);
+}
+
+.card-button {
+    max-width: 163px;
+}
+
+.card-section {
+    width: 100%;
+    display: flex;
+    gap: 148px;
+    justify-content: space-between;
+}
+
+.card-border {
+    display: flex;
+    height: 1px;
+    width: 100%;
+    left: -1.5px;
+    background-color: #E6E9EA;
+    margin: 36px 0px 29px 0px;
+}
+
+.basic-descreption {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.package-type {
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    line-height: 140%;
+    font-weight: 500;
+}
+
+.underline-card {
+    display: flex;
+    justify-content: end;
+    height: 1px;
+    width: 100%;
+    left: -1.5px;
+    background-color: #E6E9EA;
+    margin-top: 18px;
+}
+
+.list-services {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-services-points {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.point-text {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 140%;
+    font-weight: 500;
+    color: #22282B;
+}
+
+.left-card {
+    margin-left: 40px;
+}
+
+.right-card {
+    margin-right: 40px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 54px;
+    width: 100%;
+} 
+
+.header-left {
+    padding-right: 40px;
+}
+
+.header-middle {
+    margin: 0 40px;
+}
+
+.header-right {
+    margin-left: 40px;
+}
+
+.list-services-array {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 0 90px 0;
+}
+
+.included-text {
+    padding-bottom: 38px;
+}
+
+.header-choosen-card {
+    background-color: #5B40FF;
+}
+
+.choosen-card {
+    background-color: #F3F5F6;
+}
+
+.border-middle {
+    margin-left: 40px;
+    margin-right: 40px;
 }
