@@ -51,7 +51,7 @@ html {
 }
 
 .logo {
-    padding: 0px 365px 0px 264px;
+    padding-left: 264px;
 }
 
 .logo img {
@@ -64,6 +64,7 @@ html {
     display: flex;
     align-items: center;
     gap: 35px;
+    margin-left: auto;
 }
 
 .creds img {
@@ -109,6 +110,11 @@ html {
     display: flex;
     position: relative;
     padding-top: 43px;
+    width: 100%;
+}
+
+.image-wrapper img {
+    width: 100%;
 }
 
 .second-section {
