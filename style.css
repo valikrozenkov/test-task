@@ -281,11 +281,15 @@ html {
 }
 
 .border-contacts {
-    width: 1160px;
-    position: absolute;
+    width: 100%;
     display: flex;
     background-color: lightgray;
     height: 0.5px;
+}
+
+.border-contacts-wrapper {
+    display: flex;
+    width: 100%;
 }
 
 .contacts-wrapper {
@@ -300,8 +304,13 @@ html {
 
 .contacts-wrapper-logo {
     display: flex;
+    flex-direction: column;
     width: 100%;
     padding-top: 30px;
+}
+
+.contacts-link-wrapper {
+    display: flex;
 }
 
 .section-contacts {
